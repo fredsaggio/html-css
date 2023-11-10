@@ -34,7 +34,6 @@ body{
 header{
     background-image: linear-gradient(to top, hsl(147, 54%, 19%), #3AD07C);
     max-width: 100%;
-    min-width: 500px;
 }
 
 
@@ -48,7 +47,7 @@ header > h1{
     margin: 0px;
     margin-bottom: 30px;
     font-weight: normal;
-      min-width: 400px;
+    min-width: 400px;
 }
 
 header > p{
@@ -91,7 +90,7 @@ main{
     margin: auto;
     box-shadow: var(--sombras);
     max-width: 1000px;
-    min-width: 500px;
+    min-width: 300px;
     padding: 20px;
 }
 
@@ -238,7 +237,7 @@ footer{
     padding: 10px;
     font-style: italic;
     font-weight: normal;
-    min-width: 500px;
+    max-width: 100%;
 }
 
 .textlinks{
