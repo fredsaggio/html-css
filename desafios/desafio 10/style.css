@@ -2,7 +2,6 @@
 
 *{
     margin: 0px;
-    max-width: 100%;
 }
 
 :root{
@@ -25,16 +24,18 @@
     src: url(fontes/FANTASY\ MAGIST.otf) format('opentype');
 }
 
-header{
-    background-image: linear-gradient(to top, hsl(147, 54%, 19%), #3AD07C);
-    max-width: 100%;
-}
-
 body{
     margin: 0px;
     background-color: var(--bodycolor);
     margin: auto;
 }
+
+header{
+    background-image: linear-gradient(to top, hsl(147, 54%, 19%), #3AD07C);
+    max-width: 100%;
+    min-width: 400px;
+}
+
 
 header > h1{
     
@@ -46,6 +47,7 @@ header > h1{
     margin: 0px;
     margin-bottom: 30px;
     font-weight: normal;
+      min-width: 400px;
 }
 
 header > p{
@@ -88,7 +90,7 @@ main{
     margin: auto;
     box-shadow: var(--sombras);
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 400px;
     padding: 20px;
 }
 
