@@ -36,7 +36,6 @@ header{
     min-width: 320px;
     padding: 22px;
     margin: auto;
-    display: block;
 }
 
 
@@ -47,10 +46,10 @@ header > h1{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
     text-align: center;
     padding-top: 40px;
-    margin: 0px;
+    margin: auto;
     margin-bottom: 30px;
     font-weight: normal;
-    min-width: 320px;
+    max-width: 400px;
 }
 
 header > p{
@@ -61,7 +60,7 @@ header > p{
     margin-top: 32px;
     margin: auto;
     font-family: var(--fonte-padrao);
-    max-width: 320px;
+    max-width: 400px;
 }
 
 header nav > a{
