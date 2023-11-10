@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        ul.tipo1{
+            list-style-type: disc;
+        }
+        ul.tipo2{
+            list-style-type: square;
+        }
+        ol#cenoo{
+            list-style-type: lower-roman;
+        }
+        ol#tomate{
+            list-style-type: 1;
+        }
+        ol#cebola{
+            list-style-type: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol id="cenoo"> <!-- Tipos: 1, A, a, I, i -->
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Ligar para Leticia Helena</li>
+        <li>Tomar café da manhã</li>
+        <li>Ir para a academia</li>
+    </ol>
+
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square"> <!-- Tipos: Square, Disc, Circle -->
+        <li>Cenoura</li>
+        <li>Batata</li>
+        <li>Aveia</li>
+        <li>Leite</li>
+        <li>Ovo</li>
+        <li>Maçã</li>
+        <li>Macarrão</li>
+    </ul>
+
+    <h2>Meus livros favoritos</h2>
+
+    <ol>
+        <li>Livros de continuação</li>
+        <ul class="tipo1">
+            <li>Percy Jackson</li>
+            <li>Harry Potter</li>
+            <li>The Witcher</li>
+        </ul>
+        <li>Livros sem continuação</li>
+        <ul class="tipo2">
+            <li>O hobbit</li>
+            <li>Turma da mônica</li>
+            <li>Etc, nem lembro mais.</li>
+        </ul>
+    </ol>
+
+    <h2>Minhas comidas favoritas</h2>
+    <ul>
+        <li>Doces</li>
+        <ol id="tomate">
+            <li>Bolo</li>
+            <ul>
+                <li>Bolo de morango</li>
+                <li>Bolo de coco ralado</li>
+                <li>Bolo de limão</li>
+                <ul>
+                    <li>Limão siciliano</li>
+                    <li>Limão mais verdinho</li>
+                </ul>
+            </ul>
+            <li>Sorvete</li>
+            <li>Brigadeiro de paçoca</li>
+        </ol>
+        <li>Salgados</li>
+        <ol id="cebola" start="4">
+            <li>Pizza</li>
+            <li>Macarrão com molho branco</li>
+            <li>Torta salgada</li>
+        </ol>
+
+    </ul>
+    <hr>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação utilizada para criar interatividade em um site.</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Lista de definição pessoal</h2>
+
+    <h3>Definição dos lugares no Valorant</h3>
+    <dl>
+        <dt>DD</dt> <br>
+        <dd>Double doors</dd> <br>
+
+        <dt>Hookah</dt> <br>
+        <dd>Fica na Bind, no bomb B</dd> <br>
+
+        <dt>Long</dt> <br>
+        <dd>Qualquer lugar que tem um caminho estreito e longo.</dd> <br>
+    </dl>
+
+</body>
+</html>

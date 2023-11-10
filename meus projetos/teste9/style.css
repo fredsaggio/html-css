@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Castelo';
+    src: url(fonts/Brogte.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.principal{
+    font: bold normal 2em 'Castelo';
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    text-shadow: 2px 2px 7px rgb(10, 1, 1);
+    border: 1px solid black;
+    background-color: #FF9F1C;
+    width: 300px;
+    border-radius: 5px;
+}
+
+body{
+    background-image: linear-gradient(to top, #DB2B39, #011627);
+    background-attachment: fixed;
+}
+
+.box{
+    background-color: #FF9F1C;
+    width: 565px;
+    height: 318px;
+    text-align: center;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+#first{
+    color: white;
+    background-color: #FF9F1C;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#first:hover{
+    background-color: lightcoral;
+}
+
+#primeiro > .second{
+    display: none;
+}
+
+#primeiro:hover > .second{
+    display: block;
+}
+
+.second{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    background-color: rgb(20, 194, 20); 
+    margin: auto;
+    text-align: center;
+}
+
+#primeiro{
+    width: 200px;
+    margin: auto;
+}
+
+.box:hover{
+    background-color: red;
+}
+

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root{
+    --corprincipal: rgb(30, 37, 238);
+    --corsecundária: #1ff289;
+}
+
+h5{
+    background-color: var(--corsecundária);
+}

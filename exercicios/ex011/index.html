@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em dispositivos diferentes e tente ver o que acontece</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/pequeno-300.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/medio-700.png" type="image/png">
+        <img src="imagens/grande-1000.png" alt="imagem do fred">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+
+    <p>Vamos aprender como colocar áudio em seu site.</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+    <!-- MP3 WAV OGG (Não use OGG, muito pesado!) -->
+
+    <source media="(min-width: )" srcset="" type="image/">
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+p{
+    text-align: justify;
+}
+
+body{
+    background-image: radial-gradient(circle, #FDE494 1%, #5C170C);
+    background-attachment: fixed;
+}
+
+main{
+    background-color: #FDE494; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 18px #68302050 
+}
+
+h1{
+    color: #B54519;
+    text-shadow: 2px 2px 2px #702b1071;
+    text-align: center;
+}
+
+h2.sim{
+    background-color: rgb(35, 211, 35);
+    width: 200px;
+    border-radius: 2.5px;
+    box-shadow: 5px 5px 10px #532c1b8a; 
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+h2.claro{
+    background-color: rgb(35, 211, 35);
+    width: 200px;
+    border-radius: 2.5px;
+    box-shadow: 5px 5px 10px #532c1b8a; 
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    padding-top: 10px;
+}

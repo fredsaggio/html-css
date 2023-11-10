@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom, rgba(19, 19, 175, 0.425), rgb(9, 85, 13));
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    border: 2px inset salmon;
+}
+
+h1{
+    text-align: center;
+    box-shadow: inset 5px 2px 8px 1px black;
+}
+
+a{
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.486);
+}
+
+a:link{
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: lightgreen;
+    background-color: rgba(20, 29, 29, 0.644);
+}
+
+main{
+    background-color: white;
+    border: 2px outset lightblue;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+section:first-child > p{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 2px inset rgb(38, 197, 184);
+}
+    
+
+
+article{
+    background-color: lightgray;
+    padding: 8px;
+}
+
+article > p{
+    text-indent: 35px;
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+    border-top-right-radius: 10px;
+    background-color: lightcyan;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.24);
+}
+
+footer{
+    background-color: black;
+    border-radius: 10px 20px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+    padding: 2px;
+    border: 2px outset lightgreen;
+    margin-top: 10px;
+    border-radius: 10px 20px;
+    
+}
+
+
