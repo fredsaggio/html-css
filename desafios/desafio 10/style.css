@@ -2,7 +2,6 @@
 
 *{
     margin: 0px;
-    margin: auto;
 }
 
 :root{
@@ -34,6 +33,10 @@ body{
 header{
     background-image: linear-gradient(to top, hsl(147, 54%, 19%), #3AD07C);
     max-width: 100%;
+    min-width: 320px;
+    padding: 22px;
+    margin: auto;
+    display: block;
 }
 
 
@@ -47,7 +50,7 @@ header > h1{
     margin: 0px;
     margin-bottom: 30px;
     font-weight: normal;
-    min-width: 400px;
+    min-width: 320px;
 }
 
 header > p{
@@ -56,12 +59,9 @@ header > p{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616);
     font-size: 1.3em;
     margin-top: 32px;
-    width: 480px;
     margin: auto;
-    padding-right: 10px;
-    padding-left: 10px;
     font-family: var(--fonte-padrao);
-    max-width: 400px;
+    max-width: 320px;
 }
 
 header nav > a{
@@ -74,7 +74,7 @@ header nav > a{
     margin-bottom: 10px;
 }
 
-.link:hover{
+header nav > a:hover{
     color: rgb(236, 234, 234);
     text-decoration: underline;
     font-weight: bold;
@@ -83,14 +83,13 @@ header nav > a{
 }
 
 
-
 main{
     background-color: #ffffff;
     border: 2px solid green;
     margin: auto;
     box-shadow: var(--sombras);
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 320px;
     padding: 20px;
 }
 
@@ -157,14 +156,14 @@ main > article > h1{
     width: 100%;
     display: block;
     max-width: 700px;
-    min-width: 400px;
+    min-width: 320px;
     margin: auto;
 }
 
 #imagem1 img{
     width: 100%;
     max-width: 100%;
-    min-width: 400px;
+    min-width: 320px;
     display: block;
     margin: auto;
 }
@@ -173,7 +172,7 @@ main > article > h1{
 #imagem2 img{
     width: 100%;
     max-width: 100%;
-    min-width: 400px;
+    min-width: 320px;
     display: block;
     margin: auto;
 }
@@ -213,9 +212,12 @@ aside p{
 }
 
 #prefootertext{
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.8em;
+    padding: 0px 10px;
     margin: 10px 0px;
-    max-width: 1000px;
-    min-width: 300px;
 }
 
 .boxprefooter{
@@ -238,6 +240,8 @@ footer{
     font-style: italic;
     font-weight: normal;
     max-width: 100%;
+    min-width: 320px;
+    padding: 22px;
 }
 
 .textlinks{
@@ -264,4 +268,8 @@ footer{
 .boldwords{
     color: var(--boldword);
     font-weight: bold;
+}
+
+#irinamenor{
+    max-width: 100%;
 }
