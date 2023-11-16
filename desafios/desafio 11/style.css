@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
 body{
-    background-image
+    background: lightblue url('imagens/espaco.jpg') no-repeat fixed center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+div#austronauta{
+    background-image: url('imagens/astronauta.png');
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    margin: 0px;
