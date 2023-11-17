@@ -19,6 +19,7 @@
 head, body{
     max-height: 100vh;
     background-color: lightgray;
+    font-family: var(--fonte1);
 }
 
 /* ----------------------------------------------------------------- */
@@ -27,6 +28,9 @@ header{
     background-color: black;
     color: white;
     height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -34,7 +38,7 @@ header h1{
     text-align: center;
     font-family: var(--fonte2);
     font-weight: lighter;
-    font-size: 3em;
+    font-size: 8vw;
     font-variant: small-caps
 }
 
@@ -67,12 +71,15 @@ main{
 }
 
 main p{
-    margin: 100px 0px;
+    padding-bottom: 70px;
+    margin-left: 30px;
+    font-size: 3vw;
+    line-height: 2em;
+    
 }
 
 section{
     font-size: 1.5em;
-    line-height: 1.7em;
     font-family: var(--fonte3);
     padding: 15vh 0px;
 }
@@ -86,6 +93,7 @@ section.imagem{
     color: white;
     height: 650px;
     max-width: 100%;
+    box-shadow: inset 8px 8px 12px rgba(0, 0, 0, 0.233);
 }
 
 section#img01{
@@ -97,9 +105,11 @@ section#img01{
 
 .imagem p{
     background-color: rgba(0, 0, 0, 0.315);
-    width: 400px;
+    display: inline-block;
     padding: 10px;
     border-radius: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.616);
+    
 
 }
 
@@ -118,9 +128,6 @@ footer{
     padding: 10px 0px;
 }
 
-footer p{
-    font-family: var(--fonte1);
-}
 
 
 
