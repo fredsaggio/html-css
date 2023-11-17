@@ -16,6 +16,11 @@
     --fonte3: 'Sriracha', cursive;
 }
 
+head, body{
+    max-height: 100vh;
+    background-color: lightgray;
+}
+
 /* ----------------------------------------------------------------- */
 
 header{
@@ -59,6 +64,7 @@ main{
     width: 1200px;
     margin: auto;
     border: 1px solid black;
+    max-width: 100%;
 }
 
 main p{
@@ -73,12 +79,14 @@ section{
 }
 
 section.normal{
-
+    background-color: white;
 }
 
 section.imagem{
     background-color: black;
     color: white;
+    height: 650px;
+    max-width: 100%;
 }
 
 section#img01{
@@ -112,7 +120,7 @@ footer{
 }
 
 footer p{
-    font-family: var(--fonte1)
+    font-family: var(--fonte1);
 }
 
 
