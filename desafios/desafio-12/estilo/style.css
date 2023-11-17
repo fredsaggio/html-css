@@ -35,7 +35,7 @@ header h1{
     font-family: var(--fonte2);
     font-weight: lighter;
     font-size: 3em;
-    font-variant: small-caps;
+    font-variant: small-caps
 }
 
 header p{
@@ -61,7 +61,6 @@ header a:hover, footer a:hover{
 /* ----------------------------------------------------------------- */
 
 main{
-    width: 1200px;
     margin: auto;
     border: 1px solid black;
     max-width: 100%;
@@ -75,7 +74,7 @@ section{
     font-size: 1.5em;
     line-height: 1.7em;
     font-family: var(--fonte3);
-    padding: 30px;
+    padding: 15vh 0px;
 }
 
 section.normal{
@@ -98,9 +97,9 @@ section#img01{
 
 .imagem p{
     background-color: rgba(0, 0, 0, 0.315);
-    width: 300px;
+    width: 400px;
     padding: 10px;
-    border-radius: 16px;
+    border-radius: 10px;
 
 }
 
