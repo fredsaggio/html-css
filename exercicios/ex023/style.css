@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+td{
+    border: 1px solid black;
+    width: 400px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td.yellow{
+    background-color: yellow;
+}
+
+td.red{
+    background-color: red;
+}
+
+td:hover{
+    text-decoration: underline;
+    transition-duration: 0.1s;
+    background-color: lightgray;
+}
