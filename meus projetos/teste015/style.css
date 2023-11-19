@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    height: 600px;
+    position: relative;
+    margin: auto;
+}
+
+caption{
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td, th{
+    border: 1px solid black;
+    width: 200px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+td:nth-child(2){
+    text-align: right;
+}
+
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+th{
+    background-color: gray;
+    position: sticky;
+    top: -1px;
+}
+
+td#tdfoot{
+    text-align: center;
+}
+
