@@ -34,12 +34,6 @@
         td:active{
             transform: scale(98%);
         }
-
-        tr:nth-child(2n){
-            background-color: lightgray;
-
-        }
-    
     </style>
 </head>
 <body>
@@ -49,15 +43,15 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan=3>Filmes</th>
+                <th scope="row">Grupo</th>
+                <th scope="row">Nomes</th>
+                <th scope="rowgroup" colspan=3>Filmes</th>
             </tr>
         </thead>
         <tbody>
 
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th scope="colgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -79,7 +73,7 @@
             </tr>
 
             <tr>
-                <th rowspan="3">Homens</th>
+                <th scope="colgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
