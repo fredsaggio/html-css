@@ -6,6 +6,18 @@
     <title>Formulários</title>
 </head>
 <body>
-    
+    <form action="cadastro.php" autocomplete="off" method="post">
+
+        <p><label for="lastnamei">Nome:</label> 
+            <input type="text" name="lastname" id="lastnamei" required autocomplete="current-password" min-length="8" max-length="20">
+        </p>
+
+        <p><label for="namei">Idade:</label> 
+            <input type="text" name="name" id="namei" required autocomplete="username" minlength="4" maxlength="12" size="1">
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
 </body>
 </html>

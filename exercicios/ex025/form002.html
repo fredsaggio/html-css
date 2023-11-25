@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 2</title>
+
+    <style>
+
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input{
+            padding: 3px; 
+        }
+
+    </style>
+</head>
+<body>
+    <form action="icadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iuser">Username</label>
+
+            <input autocomplete="off" type="text" name="user" id="iuser" size="20" autocomplete="username" minlength="4" maxlength="12" required placeholder="Username">
+        </p>
+
+        <p>
+            <label for="ipass">Password</label>
+
+            <input type="password" name="pass" id="ipass" size="12" autocomplete="current-password" minlength="8" maxlength="20" required placeholder="Password">
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>
