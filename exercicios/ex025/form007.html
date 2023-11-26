@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 007</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <div>
+            <label for="iteste">Sabores de pizza</label>
+            <select name="pizza" id="ipizza">
+            
+                <option value="escolha" selected>-- Escolha --</option>
+
+                <optgroup label="Pizzas salgadas">
+
+                    <option value="cal">Calabresa</option>
+                    <option value="fran">Frango</option>
+                    <option value="muss">Mussarela</option>
+                    <option value="4que">4 Queijos</option>
+                    <option value="cam">Camarão</option>
+
+                </optgroup>
+
+
+                <optgroup label="Pizzas doces">
+
+                    <option value="mornu">Morango c/ nutella</option>
+                    <option value="roju">Romeu e Julieta</option>
+                    <option value="choco">Chocolate com Coco</option>
+                    <option value="cho">Chocolate</option>
+                    <option value="acai">Açaí com banana</option>
+
+                </optgroup>
+            
+            </select>
+        </div>
+
+        <div>
+            <label for="ibebidas">Bebidas Favoritas</label>
+            <input type="text" name="bebidas" id="ibebidas" required minlength="4" maxlength="30" autocomplete="work">
+
+            <datalist id="ibebidas">
+                <option>Suco de Laranja</option>
+                <option>Suco de Maracujá</option>
+                <option>Suco de Limão</option>
+                <option>Suco de Uva</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imensagem">Digite aqui sua mensagem:</label> <br>
+            <textarea name="texto" id="mensagem" cols="30" rows="10" style="resize: none" maxlength="300"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+
+    </form>
+</body>
+</html>
