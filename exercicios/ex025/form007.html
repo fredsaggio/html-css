@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 007</title>
     <style>
+
         *{
             margin: 5px;
         }
 
-
+        textarea{
+            resize: none;
+        }
 
     </style>
 </head>
@@ -52,16 +55,18 @@
             <input type="text" name="bebidas" id="ibebidas" required minlength="4" maxlength="30" autocomplete="work">
 
             <datalist id="ibebidas">
+
                 <option>Suco de Laranja</option>
                 <option>Suco de Maracujá</option>
                 <option>Suco de Limão</option>
                 <option>Suco de Uva</option>
+
             </datalist>
         </div>
 
         <div>
             <label for="imensagem">Digite aqui sua mensagem:</label> <br>
-            <textarea name="texto" id="mensagem" cols="30" rows="10" style="resize: none" maxlength="300"></textarea>
+            <textarea name="texto" id="mensagem" cols="30" rows="10" maxlength="300" placeholder="text here"></textarea>
         </div>
 
         <div>
