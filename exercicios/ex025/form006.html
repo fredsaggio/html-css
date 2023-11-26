@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 6</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <fieldset>
+
+            <legend>Teste de cores</legend>
+
+            <p>
+                <label for="icor">Cor escolhida:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Teste de range</legend>
+
+            <p>
+                <label for="isatisfacao">Nível de satisfação:</label>
+                <input type="range" name="satisfacao" id="isatisfacao" value="4" min="1" max="8">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Teste de upload de arquivos</legend>
+            <label for="ifile">Upload do arquivo:</label>
+            <input type="file" name="file" id="ifile">
+        </fieldset>
+    </form>
+</body>
+</html>
