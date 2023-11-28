@@ -23,18 +23,19 @@
         <p>
             <label for="iuser">Username</label>
 
-            <input autocomplete="off" type="text" name="user" id="iuser" size="20" autocomplete="username" minlength="4" maxlength="12" required placeholder="Username">
+            <input autocomplete="username" type="text" name="user" id="iuser" size="15" autocomplete="username" minlength="4" maxlength="12" required placeholder="Username">
         </p>
 
         <p>
             <label for="ipass">Password</label>
 
-            <input type="password" name="pass" id="ipass" size="12" autocomplete="current-password" minlength="8" maxlength="20" required placeholder="Password">
+            <input type="password" name="pass" id="ipass" size="15" autocomplete="current-password" minlength="8" maxlength="20" required placeholder="Password" pattern="^/(/d{2}/)-/d{4,5}-/d{4,5}$">
         </p>
 
         <input type="submit" value="Submit">
         <input type="reset" value="Limpar">
 
+        <!-- Inputs padrão, utilizando text e password -->
     </form>
 </body>
 </html>

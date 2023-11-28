@@ -7,33 +7,46 @@
 </head>
 <body>
     <form action="cadastro.php" autocomplete="on" method="post">
+
         <fieldset>
 
             <legend>Teste de cores</legend>
 
-            <p>
+            <div>
+
                 <label for="icor">Cor escolhida:</label>
                 <input type="color" name="cor" id="icor" value="#00ff00">
-            </p>
+ 
+            </div>
 
         </fieldset>
+
 
         <fieldset>
 
             <legend>Teste de range</legend>
 
-            <p>
+            <div>
+
                 <label for="isatisfacao">Nível de satisfação:</label>
                 <input type="range" name="satisfacao" id="isatisfacao" value="4" min="1" max="8">
-            </p>
+
+            </div>
 
         </fieldset>
+
 
         <fieldset>
+
             <legend>Teste de upload de arquivos</legend>
+
             <label for="ifile">Upload do arquivo:</label>
             <input type="file" name="file" id="ifile">
+
+            <!-- Caso use input de "file", é ncessário mudar o valor do method para "post", pois assim tirará a limitação de bytes do "get". -->
+
         </fieldset>
+
     </form>
 </body>
 </html>

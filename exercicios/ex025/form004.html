@@ -9,19 +9,32 @@
     <fieldset>
         <legend>Informações pessoais</legend>
         <form action="cadastro.php" method="get" autocomplete="on">
+
             <p>
                 <label for="iname">Nome</label>
                 <input type="text" name="name" id="iname" required minlength="3" maxlength="15" placeholder="Username" autocomplete="username">
             </p>
+
             <p>
                 <label for="iemail">E-mail</label>
                 <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="username@email.com">
             </p>
+
             <p>
                 <label for="itel">Celular</label>
                 <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxx-xxxx" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$">
+                <!-- Patterns muito necessários as vezes, como nesse caso. -->
             </p>
-            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+
+            <!-- Inputs novos como os de e-mail e telefone
+            
+            Os de e-mail só são diferentes pois não são ativados sem ter um "@" nele.-->
         </form>
     </fieldset>
 </body>

@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários 5</title>
+
+    <style>
+
+        div{
+
+            margin: 8px;
+
+        }
+        
+
+        fieldset{
+
+            width: 400px;
+            padding: 30px;
+
+        }
+
+    </style>
+
 </head>
 <body>
     <form action="cadastro.php" autocomplete="on" method="get">
         <fieldset>
+
             <legend>Videogame favorito</legend>
 
             <input type="radio" name="videogame" id="ivideogame" value="playstation"> 
@@ -19,26 +39,31 @@
         </fieldset>
 
         <fieldset>
+
             <legend>Esportes favoritos</legend>
 
-            <input type="checkbox" name="sport" id="ibasq"> 
+            <input type="checkbox" name="sport" id="ibasq" value="basquete"> 
             <label for="ibasq">Basquete</label>
 
-            <input type="checkbox" name="sport" id="ifut"> 
+            <input type="checkbox" name="sport" id="ifut" value="futebol"> 
             <label for="ifut">Futebol</label>
 
-            <input type="checkbox" name="sport" id="ibad"> 
+            <input type="checkbox" name="sport" id="ibad" value="badminton"> 
             <label for="ibad">Badminton</label>
 
-            <input type="checkbox" name="sport" id="ijudo"> 
+            <input type="checkbox" name="sport" id="ijudo" value="judo"> 
             <label for="ijudo">Judô</label>
             
+            <!-- 
+                É necessário colocar o mesmo name para todos, pois fazem parte do mesmo grupo (Esportes), logo quando esses checkbox serem enviados para o banco de dados, será mais fácil localizar.
+             -->
+
         </fieldset>
 
-        <p>
+        <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </p>
+        </div>
 
     </form>
 </body>
