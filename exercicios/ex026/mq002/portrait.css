@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /* Configurações tela em pé */
+
+body{
+
+    background: url('../mq002/imagens/cev-portrait.jpg') no-repeat scroll center bottom; 
+
+    background-size: contain;
+
+}
