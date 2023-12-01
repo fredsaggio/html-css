@@ -4,6 +4,15 @@
 /* Tablets */
 @media screen and (min-width:768px) and (max-width:992px){
 
+    h2::before{
+        content: 'Versão Tablet';
+        color: white;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.61);
+        font-size: 0.8em;
+        text-align: center;
+        display: block;
+    }
+
     body{
         background-image: url('imagens/back-tablet.jpg');
     }
@@ -27,6 +36,15 @@
 
 /* Desktop monitors */
 @media screen and (min-width: 992px) and (max-width: 1200px){
+
+    h2::before{
+        content: 'Versão Desktop';
+        color: white;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.61);
+        font-size: 0.8em;
+        text-align: center;
+        display: block;
+    }
 
     body{
         background-image: url('imagens/back-pc.jpg');
@@ -52,10 +70,19 @@
 /* Televisors */
 @media screen and (min-width: 1200px){
 
+    h2::before{
+        content: 'Versão TV';
+        color: white;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.61);
+        font-size: 0.8em;
+        text-align: center;
+        display: block;
+    }
+    
     body{
         background-image: url('imagens/back-tv.jpg');
     }
-    
+
     main{
         width: 900px;
         height: 900px;

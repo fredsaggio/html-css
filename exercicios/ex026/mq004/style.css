@@ -41,4 +41,13 @@ h1{
     text-align: center;
 }
 
+h2::before{
+    content: 'Versão Smartphone';
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.61);
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+}
+
 #pc, #print, #tablet, #tv{display: none;}
