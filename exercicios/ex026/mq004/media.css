@@ -1,2 +1,88 @@
 @charset "UTF-8";
 
+
+/* Tablets */
+@media screen and (min-width:768px) and (max-width:992px){
+
+    body{
+        background-image: url('imagens/back-tablet.jpg');
+    }
+
+    main{
+        width: 500px;
+        height: 500px;
+    }
+
+    #phone{
+        display: none;
+    }
+
+    #tablet{
+        display: block;
+    }
+}
+
+
+
+
+/* Desktop monitors */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+    body{
+        background-image: url('imagens/back-pc.jpg');
+    }
+
+    main{
+        width: 700px;
+        height: 700px;
+    }
+
+        #phone{
+        display: none;
+    }
+
+    #pc{
+        display: block;
+    }
+
+}
+
+
+
+/* Televisors */
+@media screen and (min-width: 1200px){
+
+    body{
+        background-image: url('imagens/back-tv.jpg');
+    }
+    
+    main{
+        width: 900px;
+        height: 900px;
+    }
+
+    #phone{
+        display: none;
+    }
+
+    #tv{
+        display: block;
+    }
+
+
+}
+
+
+
+/* Impressoras */
+@media print{
+
+    main{
+        border: 2px solid  black;
+    }
+
+    main::after{
+        content: 'Criado por Frederico Saggio';
+        text-decoration: underline;
+    }
+}
