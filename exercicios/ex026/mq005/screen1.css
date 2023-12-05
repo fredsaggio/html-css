@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+header li{
+    display:none;
+
+}
+
+header div{
+    display: block;
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+main{
+    max-width: 600px;
+    
+}
