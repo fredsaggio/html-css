@@ -28,6 +28,8 @@ header{
 header h1{
     text-align: center;
     font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
 }
 
 
@@ -42,8 +44,6 @@ header li{
     padding: 10px 5px 10px 5px;
     font-weight: lighter;
     text-align: center;
-    margin-left: -10px;
-    margin-right: -10px;
     border-top: 2px solid gray; /* Tinha colocado margin, mas é border. */
 }
 
@@ -71,7 +71,14 @@ header div{
     display: none;
 }
 
-#burguer{
+header #burguer{
+    display: block;
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
     cursor: pointer;
 }
 

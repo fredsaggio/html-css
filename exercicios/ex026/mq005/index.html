@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" media="all">
-    <link rel="stylesheet" href="screen1.css" media="screen and (orientation:portrait)" and (max-width: 600px)>
+    <link rel="stylesheet" href="screen1.css" media="screen">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projeto Media Query</title>
 </head>
-<body>
+<body onresize="MudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <div onclick="clickMenu()" id="burguer" class="material-icons">menu</div>
@@ -34,6 +34,18 @@
         </article>
     </main>
     <script>
+
+        function MudouTamanho(){
+
+            if (window.innerWidth >= '768'){
+                itens.style.display = 'block'
+            } 
+            
+            else {
+                itens.style.display = 'none'
+            }
+        }
+        
         function clickMenu(){
 
             if (itens.style.display == 'none'){
@@ -44,6 +56,10 @@
                 itens.style.display = 'none'
             }
         }
+
+        /* Pegue a lógica dessas functions, quando o tamanho está pequeno, automaticamente fica em 'none', fazendo sentido a segunda function de que se ao clicar, o display estiver 'none', virará 'block'.
+        
+        Tudo é questão de lógica, aprenda, Fred.*/ 
     </script>
 </body>
 </html>
