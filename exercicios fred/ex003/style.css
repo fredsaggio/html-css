@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    color: white;
+}
+
+header{
+    background-color: rgb(0, 8, 243);
+
+}
+
+main{
+    background-color: red;
+}
+
+aside{
+    background-color: lightpink;
+}
+
+footer{
+    background-color: lightgreen;
+}
