@@ -3,6 +3,15 @@
 
 /* Tags gerais */
 
+@font-face {
+    font-family: 'americanas';
+    src: url(font/ModernAesthetic-DemoVersion-Regular.otf);
+}
+
+:root {
+    --fontePrincipal: 'americanas', serif;
+}
+
 
 * {
     padding: 0;
@@ -14,7 +23,7 @@
 body { 
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradiente(#AF1E2B, #000000, )
+    background-image: linear-gradient(350deg, #000000, #AF1E2B)
 }
 
  
@@ -30,39 +39,54 @@ main {
     flex-direction: column;
 }
 
-h1 {
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    text-shadow: 1px 2px 12px black;
-    font-size: 1.8em;
-}
-
-
-
 section {
-    background-color: rgb(154, 149, 149);
-    width: 300px;
-    height: 450px;
-    border: 1px solid black;
-    border-radius: 5px;
+    background-color: rgb(19, 18, 18);
+    width: 250px;
+    height: 350px;
+    border: 1px solid rgb(13, 12, 46);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 
+h1 {
+    color: white;
+    font-family: var(--fontePrincipal);
+    font-weight: lighter;
+    text-shadow: 1px 2px 3px black;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 12px;
+}
+
+
 div#painel {
-    height: 20%;
-    background-color: rgb(79, 70, 70);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 2px;
+    height: 45px;
+    background-color: rgb(239, 239, 239);
+    margin: 0px 15px;
 }
 
 div#numbers {
-    background-color: rgba(255, 255, 255, 0.908);
-    grid-template-columns: 5;
-    grid-template-rows: 5;
-    height: 80%;
-    gap: 0px;
-    justify-self: flex-end;
+    width: 90%;
+    margin: auto;
+    height: 65%;
+}
+
+
+table {
+    width: 100%;
+    height: 100%;
+    
+}
+
+button {
+    background-color: rgb(36, 35, 35);
+    width: 95%;
+    height: 95%;
+    color: white;
+    font-size: 1.3em;
+}
+
+button:hover {
+    background-color: rgb(23, 22, 22);
 }
