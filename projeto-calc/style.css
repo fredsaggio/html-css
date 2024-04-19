@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+/* Tags gerais */
+
+
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body { 
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradiente(#AF1E2B, #000000, )
+}
+
+ 
+/* Tags de conteúdo */
+
+
+main { 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-shadow: 1px 2px 12px black;
+    font-size: 1.8em;
+}
+
+
+
+section {
+    background-color: rgb(154, 149, 149);
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+div#painel {
+    height: 20%;
+    background-color: rgb(79, 70, 70);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+div#numbers {
+    background-color: rgba(255, 255, 255, 0.908);
+    grid-template-columns: 5;
+    grid-template-rows: 5;
+    height: 80%;
+    gap: 0px;
+    justify-self: flex-end;
+}
