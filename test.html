@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+<style>
+/* Seu CSS aqui */
+</style>
+</head>
+<body>
+
+<main>
+    <h1>Calculadora</h1>
+    <section>
+        <div id="painel"></div>
+        <div id="numbers">
+            <table>
+                <tr>
+                    <td><button onclick="addNumber(7)">7</button></td>
+                    <td><button onclick="addNumber(8)">8</button></td>
+                    <td><button onclick="addNumber(9)">9</button></td>
+                    <td rowspan="2"><button onclick="addOperator('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber(4)">4</button></td>
+                    <td><button onclick="addNumber(5)">5</button></td>
+                    <td><button onclick="addNumber(6)">6</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber(1)">1</button></td>
+                    <td><button onclick="addNumber(2)">2</button></td>
+                    <td><button onclick="addNumber(3)">3</button></td>
+                    <td rowspan="2"><button onclick="addOperator('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="addNumber(0)">0</button></td>
+                    <td><button onclick="clear()">C</button></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script>
+    let expression = '';
+
+    function addNumber(number) {
+        expression += number;
+        updateDisplay();
+    }
+
+    function addOperator(operator) {
+        expression += operator;
+        updateDisplay();
+    }
+
+    function clear() {
+        expression = '';
+        updateDisplay();
+    }
+
+    function calculate() {
+        try {
+            const result = eval(expression);
+            expression = result.toString();
+            updateDisplay();
+        } catch (error) {
+            expression = 'Erro';
+            updateDisplay();
+        }
+    }
+
+    function updateDisplay() {
+        document.getElementById('painel').innerText = expression;
+    }
+</script>
+
+</body>
+</html>

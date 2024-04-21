@@ -11,39 +11,39 @@
         <section>
             <h1>Calculadora do Fred</h1>
             <div id="painel">
+                <div id="previous-operation">
+                    <p id="previous">123</p>
+                </div>
+                <div id="current-operation">
+                    <p id="current">456</p>
+                </div>
     
             </div>
             <div id="numbers">
-                <table>
-                    <tr>
-                        <td><button>c</button></td>
-                        <td><button><</button></td>
-                        <td><button>/</button></td>
-                        <td><button>x</button></td>
-                    </tr>
-                    <tr>
-                        <td><button>7</button></td>
-                        <td><button>8</button></td>
-                        <td><button>9</button></td>
-                        <td><button>-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button>4</button></td>
-                        <td><button>5</button></td>
-                        <td><button>6</button></td>
-                        <td><button>+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button>1</button></td>
-                        <td><button>2</button></td>
-                        <td><button>3</button></td>
-                        <td rowspan="2"><button>=</button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button>0</button></td>
-                        <td><button>.</button></td>
-                    </tr>
-                </table> 
+                <button class="operations">CE</button>
+                <button class="operations">C</button>
+                <button class="operations"><</button>
+                <button class="operations">/</button>
+
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operations">x</button>
+
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>    
+                <button class="operations">-</button>       
+
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operations">+</button>
+
+                <button class="number">0</button>
+                <button class="number">.</button>               
+                <button id="equal">=</button>            
+                
             </div>
         </section>
     </main>
